@@ -1,0 +1,479 @@
+/* ================= GENERAL ================= */
+
+.new-collections-page {
+  width: 100%;
+  background: #fff;
+  color: #111;
+}
+
+
+/* ================= HERO ================= */
+
+.new-collections-hero {
+  min-height: 500px;
+  background-image: url("/images/new-collections-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.new-collections-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.new-collections-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.new-collections-hero-content p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.new-collections-hero-content h1 {
+  font-size: 68px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.new-collections-hero-content span {
+  display: block;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* ================= INTRO ================= */
+
+.new-collections-intro {
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+.new-collections-intro > p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.new-collections-intro h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.new-collections-intro span {
+  display: block;
+  max-width: 550px;
+  margin: auto;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.new-collections-products {
+  padding: 70px 7% 110px;
+  background: #f8f8f8;
+}
+
+
+/* ================= TOP ================= */
+
+.new-collections-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.new-collections-top p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.new-collections-top h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+/* ================= SORT ================= */
+
+.new-collections-sort {
+  padding: 12px 35px 12px 15px;
+  border: 1px solid #ddd;
+  background: #fff;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* ================= FILTERS ================= */
+
+.new-collections-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.new-collections-filters button {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 11px 25px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-collections-filters button:hover,
+.new-collections-filters button.active {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+
+/* ================= GRID ================= */
+
+.new-collections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
+
+
+/* ================= CARD ================= */
+
+.new-collection-card {
+  background: #fff;
+  min-width: 0;
+}
+
+
+/* ================= IMAGE ================= */
+
+.new-collection-image {
+  height: 420px;
+  background: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+}
+
+.new-collection-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.new-collection-card:hover .new-collection-image img {
+  transform: scale(1.05);
+}
+
+
+/* ================= BADGE ================= */
+
+.new-collection-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #111;
+  color: #fff;
+  padding: 7px 12px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+
+/* ================= WISHLIST ================= */
+
+.new-collection-wishlist {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 21px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-collection-wishlist:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+/* ================= INFO ================= */
+
+.new-collection-info {
+  padding: 18px 3px 25px;
+}
+
+.new-collection-info p {
+  color: #888;
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.new-collection-info h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+.new-collection-price {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* ================= CART ================= */
+
+.new-collection-cart {
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px;
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+  font-size: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.new-collection-cart:hover {
+  background: #111;
+  color: #fff;
+}
+
+
+/* ================= PROMO ================= */
+
+.new-collections-promo {
+  min-height: 500px;
+  background-image: url("/images/new-collections-promo.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.new-collections-promo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.new-collections-promo-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.new-collections-promo-content p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.new-collections-promo-content h2 {
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 0 0 25px;
+}
+
+.new-collections-promo-content span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ================= FINAL ================= */
+
+.new-collections-final {
+  text-align: center;
+  padding: 110px 20px;
+  background-color: #ddd;
+}
+
+.new-collections-final > p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #777;
+}
+
+.new-collections-final h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 15px 0 25px;
+}
+
+.new-collections-final span {
+  display: block;
+  max-width: 550px;
+  margin: auto;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 991px) {
+
+  .new-collections-hero {
+    min-height: 450px;
+  }
+
+  .new-collections-hero-content h1 {
+    font-size: 55px;
+  }
+
+  .new-collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .new-collection-image {
+    height: 400px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 576px) {
+
+  .new-collections-hero {
+    min-height: 420px;
+  }
+
+  .new-collections-hero-content h1 {
+    font-size: 45px;
+  }
+
+  .new-collections-hero-content span {
+    font-size: 14px;
+  }
+
+  .new-collections-intro {
+    padding: 70px 20px;
+  }
+
+  .new-collections-intro h2 {
+    font-size: 36px;
+  }
+
+  .new-collections-products {
+    padding: 60px 20px 70px;
+  }
+
+  .new-collections-top {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .new-collections-top h2 {
+    font-size: 30px;
+  }
+
+  .new-collections-sort {
+    width: 100%;
+  }
+
+  .new-collections-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 12px;
+  }
+
+  .new-collection-image {
+    height: 280px;
+  }
+
+  .new-collection-info {
+    padding: 13px 2px 20px;
+  }
+
+  .new-collection-info p {
+    font-size: 8px;
+  }
+
+  .new-collection-info h3 {
+    font-size: 14px;
+  }
+
+  .new-collection-price {
+    font-size: 13px;
+  }
+
+  .new-collection-cart {
+    padding: 11px 5px;
+    font-size: 8px;
+  }
+
+  .new-collection-wishlist {
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .new-collections-promo {
+    min-height: 420px;
+  }
+
+  .new-collections-promo-content h2 {
+    font-size: 38px;
+  }
+
+  .new-collections-final {
+    padding: 70px 20px;
+  }
+
+  .new-collections-final h2 {
+    font-size: 36px;
+  }
+
+}

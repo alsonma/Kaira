@@ -1,0 +1,215 @@
+/* ==========================================
+   HEADER ACTIONS
+========================================== */
+
+.header-action-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ==========================================
+   WISHLIST & CART
+========================================== */
+
+.header-action-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-action-link {
+  color: #111;
+  text-decoration: none;
+  padding-left: 100px;
+  font-size: 13px;
+  letter-spacing: 1px;
+
+  transition: opacity 0.3s ease;
+}
+
+.header-action-link:hover {
+  color: #111;
+  opacity: 0.55;
+}
+
+.wishlist-count,
+.cart-count {
+  font-size: 11px;
+}
+
+
+/* ==========================================
+   SEARCH & ACCOUNT ICON
+========================================== */
+
+.header-icon-item,
+.header-account-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-icon-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #111;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.header-icon-link:hover {
+  color: #777;
+}
+
+.header-search-icon,
+.header-account-icon {
+  display: block;
+}
+
+
+/* ==========================================
+   REMOVE BOOTSTRAP DROPDOWN ARROW
+========================================== */
+
+.header-account-item .dropdown-toggle::after {
+  display: none;
+}
+/* ================================
+   ACCOUNT PROFILE
+================================ */
+
+.header-account-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Profile icon */
+.header-account-item .header-icon-link {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #111;
+  text-decoration: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.header-account-item .header-icon-link:hover {
+  color: #111;
+  opacity: 0.6;
+}
+
+/* Remove Bootstrap dropdown arrow */
+.header-account-item .dropdown-toggle::after {
+  display: none;
+}
+
+
+/* ================================
+   ACCOUNT DROPDOWN
+================================ */
+
+.account-profile-menu {
+  position: absolute !important;
+
+  /* Open toward the LEFT */
+  right: 0 !important;
+  left: auto !important;
+
+  /* Position below profile icon */
+  top: 100% !important;
+  margin-top: 10px !important;
+
+  min-width: 190px;
+
+  padding: 8px 0;
+
+  background: #fff;
+
+  border: 1px solid #eeeeee;
+  border-radius: 0;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  z-index: 9999;
+}
+
+
+/* ================================
+   DROPDOWN LINKS
+================================ */
+
+.account-profile-link {
+  display: block;
+
+  padding: 12px 20px;
+
+  color: #111 !important;
+  background: transparent;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.3s ease,
+    padding-left 0.3s ease;
+}
+
+.account-profile-link:hover,
+.account-profile-link:focus {
+  color: #111 !important;
+  background: #f5f5f5 !important;
+
+  padding-left: 25px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 991px) {
+
+  .header-account-item .header-icon-link {
+    width: 38px;
+    height: 38px;
+  }
+
+  .account-profile-menu {
+    min-width: 175px;
+
+    right: 0 !important;
+    left: auto !important;
+  }
+
+}
+
+
+/* Prevent horizontal page scrolling */
+html,
+body {
+  overflow-x: hidden;
+}

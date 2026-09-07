@@ -1,0 +1,163 @@
+
+/* =====================================
+   NEWSLETTER
+===================================== */
+
+.newsletter-area {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f7f7f7;
+
+  background-image: url("/images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.newsletter-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-content {
+  width: 70%;
+  max-width: 800px;
+
+  padding: 60px 0;
+}
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.newsletter-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.newsletter-heading h2 {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #111;
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+/* =====================================
+   INPUT
+===================================== */
+
+.newsletter-input {
+  flex: 1;
+
+  min-width: 250px;
+  height: 58px;
+
+  padding: 0 20px;
+
+  border: 1px solid #ddd;
+  background: #fff;
+
+  outline: none;
+
+  font-size: 15px;
+
+  color: #111;
+
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-input:focus {
+  border-color: #111;
+}
+
+.newsletter-input::placeholder {
+  color: #888;
+}
+
+
+/* =====================================
+   BUTTON
+===================================== */
+
+.newsletter-button {
+  height: 58px;
+
+  padding: 0 35px;
+
+  border: none;
+
+  background: #111;
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.newsletter-button:hover {
+  background: #333;
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+  .newsletter-area {
+    padding: 50px 0;
+  }
+
+  .newsletter-content {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .newsletter-heading h2 {
+    font-size: 22px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
+}
+

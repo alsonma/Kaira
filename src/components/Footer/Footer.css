@@ -1,0 +1,12 @@
+.shipping {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 20px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
