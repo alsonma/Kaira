@@ -235,9 +235,7 @@ function Header() {
                   aria-labelledby="accountDropdown"
                 >
                   <li>
-                    <a href="/login" className="dropdown-item">
-                      Login
-                    </a>
+                    <Link to="/login" className="dropdown-item">Login</Link>
                   </li>
 
                   <li>
