@@ -1,5 +1,6 @@
 import React from "react";
 import "./Men.css";
+import { Link } from "react-router-dom";
 
 function Men() {
   return (
@@ -40,7 +41,7 @@ function Men() {
         <div className="men-category-grid">
 
           {/* CASUAL */}
-          <a href="/product" className="men-category-card">
+          <Link to="/product" className="men-category-card">
 
             <img
               src="/images/cat-large-item1.jpg"
@@ -52,11 +53,11 @@ function Men() {
               <span>SHOP NOW →</span>
             </div>
 
-          </a>
+          </Link>
 
 
           {/* FORMAL */}
-          <a href="/product" className="men-category-card">
+          <Link to="/product" className="men-category-card">
 
             <img
               src="/images/banner-image-4.jpg"
@@ -68,11 +69,11 @@ function Men() {
               <span>SHOP NOW →</span>
             </div>
 
-          </a>
+          </Link>
 
 
           {/* JACKETS */}
-          <a href="/product" className="men-category-card">
+          <Link to="/product" className="men-category-card">
 
             <img
               src="/images/product-item-1.jpg"
@@ -84,7 +85,7 @@ function Men() {
               <span>SHOP NOW →</span>
             </div>
 
-          </a>
+          </Link>
 
         </div>
 

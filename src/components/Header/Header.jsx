@@ -69,9 +69,9 @@ function Header() {
 
               {/* HOME */}
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                <Link className="nav-link active" to="/">
                   Home
-                </a>
+                </Link>
               </li>
 
               {/* SHOP */}
@@ -88,21 +88,21 @@ function Header() {
 
                 <ul className="dropdown-menu" aria-labelledby="dropdownShop">
                   <li>
-                    <a className="dropdown-item" href="/Men">
+                    <Link className="dropdown-item" to="/Men">
                       Shop for Men
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="dropdown-item" href="/Women">
+                    <Link className="dropdown-item" to="/Women">
                       Shop for Women
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a className="dropdown-item" href="/accessories">
+                    <Link className="dropdown-item" to="/accessories">
                       Accessories
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -151,23 +151,23 @@ function Header() {
 
               {/* NEW ARRIVALS */}
               <li className="nav-item">
-                <a className="nav-link" href="/newcollection">
+                <Link className="nav-link" to="/newcollection">
                   New Arrivals
-                </a>
+                </Link>
               </li>
 
               {/* ABOUT */}
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
 
               {/* CONTACT */}
               <li className="nav-item">
-                <a className="nav-link" href="/contact">
+                <Link className="nav-link" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
 
             </ul>
@@ -239,21 +239,21 @@ function Header() {
                   </li>
 
                   <li>
-                    <a href="/register" className="dropdown-item">
+                    <Link to="/register" className="dropdown-item">
                       Register
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="profile.html" className="dropdown-item">
+                    <Link to="profile.html" className="dropdown-item">
                       My Profile
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a href="orders.html" className="dropdown-item">
+                    <Link to="orders.html" className="dropdown-item">
                       My Orders
-                    </a>
+                    </Link>
                   </li>
                 </ul>
 

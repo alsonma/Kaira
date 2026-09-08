@@ -1,6 +1,7 @@
 
 import React from "react";
 import "./Women.css";
+import { Link } from "react-router-dom";
 
 function Women() {
   return (
@@ -19,7 +20,7 @@ function Women() {
 
         <div className="category-grid">
 
-          <a href="#" className="category-card">
+          <Link to="/product" className="category-card">
             <img
               src="/images/product-item-3.jpg"
               alt="Women's Dresses"
@@ -29,10 +30,10 @@ function Women() {
               <h3>Dresses</h3>
               <span>SHOP NOW →</span>
             </div>
-          </a>
+          </Link>
 
 
-          <a href="#" className="category-card">
+          <Link to="/product" className="category-card">
             <img
               src="/images/product-item-5.jpg"
               alt="Women's Tops"
@@ -42,10 +43,10 @@ function Women() {
               <h3>Tops</h3>
               <span>SHOP NOW →</span>
             </div>
-          </a>
+          </Link>
 
 
-          <a href="#" className="category-card">
+          <Link to="/product" className="category-card">
             <img
               src="/images/product-item-2.jpg"
               alt="Party Wear"
@@ -55,7 +56,7 @@ function Women() {
               <h3>Party Wear</h3>
               <span>SHOP NOW →</span>
             </div>
-          </a>
+          </Link>
 
         </div>
       </section>

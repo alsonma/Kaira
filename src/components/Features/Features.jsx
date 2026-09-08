@@ -1,5 +1,6 @@
 import React from "react";
 import "./Features.css";
+import { Link } from "react-router-dom";
 
 
 function Features() {
@@ -131,18 +132,18 @@ function Features() {
           <div className="category-card">
 
             <div className="category-image-box">
-              <a href="/men">
+              <Link to="/men">
                 <img
                   src="/images/cat-item1.jpg"
                   alt="Men's Fashion"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="category-button-box">
-              <a href="/men" className="category-shop-btn">
+              <Link to="/men" className="category-shop-btn">
                 Shop for Men
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -152,18 +153,18 @@ function Features() {
           <div className="category-card">
 
             <div className="category-image-box">
-              <a href="/women">
+              <Link to="/women">
                 <img
                   src="/images/cat-item2.jpg"
                   alt="Women's Fashion"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="category-button-box">
-              <a href="/women" className="category-shop-btn">
+              <Link to="/women" className="category-shop-btn">
                 Shop for Women
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -173,18 +174,18 @@ function Features() {
           <div className="category-card">
 
             <div className="category-image-box">
-              <a href="/accessories">
+              <Link to="/accessories">
                 <img
                   src="/images/cat-item3.jpg"
                   alt="Accessories"
                 />
-              </a>
+              </Link>
             </div>
 
             <div className="category-button-box">
-              <a href="/accessories" className="category-shop-btn">
+              <Link to="/accessories" className="category-shop-btn">
                 Shop Accessories
-              </a>
+              </Link>
             </div>
 
           </div>
